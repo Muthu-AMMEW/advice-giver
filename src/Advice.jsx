@@ -6,7 +6,7 @@ import './Advice.css';
 export default function Advice() {
 
     const [Advice, setAdvice] = useState("Please Click the Button for Advice");
-    const [count, setCount] = useState(-1);
+    const [count, setCount] = useState(0);
 
     async function getAdvice() {
         const res = await fetch("https://api.adviceslip.com/advice");
